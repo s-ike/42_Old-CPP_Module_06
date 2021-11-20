@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 21:41:01 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/20 22:37:04 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/20 23:22:54 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ Data*	deserialize(uintptr_t raw)
 
 int	main()
 {
+	print_header("Data data(100)");
 	Data	data(100);
 
 	print_header("data address");
