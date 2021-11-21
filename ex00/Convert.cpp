@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 12:22:11 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/21 18:04:14 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/21 23:08:21 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -194,7 +194,12 @@ void	Convert::put_double()
 		std::cout << "impossible" << std::endl;
 		return;
 	}
-	if (_d == INFINITY)
+	if (_d != _d)
+	{
+		std::cout << "nan" << std::endl;
+		return;
+	}
+	else if (_d == INFINITY)
 	{
 		std::cout << "inf" << std::endl;
 		return;
