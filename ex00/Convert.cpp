@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 12:22:11 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/21 23:08:21 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/21 23:22:42 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -141,7 +141,10 @@ void	Convert::put_char()
 	{
 		char	c = static_cast<char>(_d);
 		if (isprint(c))
-			charstr = c;
+		{
+			std::cout << "char: '" << c << '\'' << std::endl;
+			return;
+		}
 		else
 			charstr = "Non displayable";
 	}
