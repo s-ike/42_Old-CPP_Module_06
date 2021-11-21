@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 12:22:11 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/20 19:08:07 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/21 18:04:14 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -165,28 +165,6 @@ void	Convert::put_int()
 	}
 	std::cout << "int: " << intstr << std::endl;
 }
-
-// void	Convert::put_float()
-// {
-// 	std::string	floatstr;
-
-// 	if (!_is_valid)
-// 		floatstr = "impossible";
-// 	else
-// 	{
-// 		float	f = static_cast<float>(_d);
-// 		std::ostringstream	os;
-// 		os << f;
-// 		floatstr = os.str();
-// 		if (!_is_special && f != NAN && f != INFINITY && f != -INFINITY)
-// 		{
-// 			if (!_has_point || std::floor(f) == f)
-// 				floatstr += ".0";
-// 		}
-// 		floatstr += "f";
-// 	}
-// 	std::cout << "float: " << floatstr << std::endl;
-// }
 
 void	Convert::put_float()
 {
