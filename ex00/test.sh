@@ -76,6 +76,8 @@ test +
 test -
 test a
 test f
+test 126
+test 127
 
 header "error"
 
