@@ -79,8 +79,19 @@ test f
 test 126
 test 127
 
+header "other"
+
+test .0
+test 0001
+test +.1
+test -.1
+test 00.1
+
 header "error"
 
+test 0..1
+test 1.+
+test 1+
 test +f
 test -f
 test na
