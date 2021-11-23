@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 12:22:11 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/21 23:22:42 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/23 15:02:18 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,6 @@
 /*   orthodox canonical form                                                  */
 /* ************************************************************************** */
 
-Convert::Convert()
-{}
-
 Convert::Convert(const std::string& input)
 	:
 	_input(input),
@@ -33,20 +30,6 @@ Convert::Convert(const std::string& input)
 {
 	modify_input();
 	to_double();
-}
-
-Convert::Convert(const Convert& other)
-{
-	*this = other;
-}
-
-Convert&	Convert::operator=(const Convert& other)
-{
-	if (this != &other)
-	{
-		_input = other._input;
-	}
-	return *this;
 }
 
 Convert::~Convert()

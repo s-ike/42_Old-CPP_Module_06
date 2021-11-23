@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 12:19:07 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/20 16:43:48 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/23 15:02:31 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ class Convert
 
 	// orthodox canonical form
 	Convert();
+	Convert(const Convert& other);
+	Convert&	operator=(const Convert& other);
 
 	// methods
 	bool	is_valid_input();
@@ -40,8 +42,6 @@ class Convert
 public:
 	// orthodox canonical form
 	Convert(const std::string& input);
-	Convert(const Convert& other);
-	Convert&	operator=(const Convert& other);
 	~Convert();
 
 	// methods
